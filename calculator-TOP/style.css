@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: content-box;
+}
+*{
+    font-size: 20px;
+}
+#calBody{
+    width: 500px;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid crimson;
+    border-radius: 20px;
+    
+}
+#calDisplay{
+    height: 100px;
+    width:400px ;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-block: 20px;
+    background-color: aliceblue;
+}
+#calButtons{
+    display: flex;
+}
+div#numbers{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows:repeat(3,100px) ;
+    height: 400px;
+    width: 300px;
+}
+div#bigButtons{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 
+}
+div#operators{
+    display: flex;
+    flex-direction:column;
+}
+div#removeBut{
+    display: flex;
+    height: 100px;
+    width:150px
+}
+#removeBut button{
+    width: 75px;
+}
+div#signs{
+    display: flex;
+    flex-direction: column;
+    height: 200px
+}
+#signs button{
+    height:50px ;
+}
+#Equal button{
+    height: 100px;
+    width: 150px;
+}
