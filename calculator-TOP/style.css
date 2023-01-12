@@ -16,8 +16,7 @@ body{
     flex-direction: column;
     align-items: center;
     border: 5px solid crimson;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
 }
 #calDisplay{
     height: 100px;
@@ -26,10 +25,22 @@ body{
     border-radius: 20px;
     margin-block: 20px;
     background-color: aliceblue;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.operate{
+    height: 33px;
+    width: 360px;
+    font-size: 20pt;
+    text-align: left;
+
 }
 #calButtons{
     display: flex;
 }
+
+
 div#numbers{
     display: grid;
     grid-template-columns: repeat(3,100px);

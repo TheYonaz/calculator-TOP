@@ -9,11 +9,13 @@
   </head>
 
   <body>
-    
     <div>
       <div id="calBody">
-        
-        <div id="calDisplay"></div>
+        <div id="calDisplay">
+          <div id="preNum" class="operate"></div>
+          <div id="opeDiv" class="operate"></div>
+          <div id="currentNum" class="operate"></div>
+        </div>
 
         <div id="calButtons">
           <div id="numbers">
@@ -33,7 +35,7 @@
           </div>
           <div id="operators">
             <div id="removeBut">
-              <button>Del</button>
+              <button onclick="deleteLast()">Del</button>
               <button id="Clear">C</button>
             </div>
             <div id="signs">
@@ -43,15 +45,13 @@
               <button>X</button>
             </div>
             <div id="Equal">
-              <button id="equal">=</button>
+              <button id="equal" onclick="operate()">=</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-        
     <script src="javascript.js"></script>
   </body>
-  
 </html>
