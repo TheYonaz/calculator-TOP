@@ -77,3 +77,10 @@ div#signs{
     height: 100px;
     width: 150px;
 }
+#negative{
+    display: flex;
+}
+#negative button{
+    width: 75px;
+    margin: 0px;
+}

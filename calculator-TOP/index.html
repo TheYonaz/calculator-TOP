@@ -30,7 +30,7 @@
             <button class="num">3</button>
             <div id="bigButtons">
               <button class="num">0</button>
-              <button id="Dot">.</button>
+              <button id="Dot" onclick="dot()">.</button>
             </div>
           </div>
           <div id="operators">
@@ -39,10 +39,13 @@
               <button id="Clear">C</button>
             </div>
             <div id="signs">
-              <button>+</button>
-              <button>-</button>
-              <button>%</button>
-              <button>X</button>
+              <button class="operators">+</button>
+              <div id="negative">
+                <button class="operators">-</button>
+                <button onclick="negNum()" id="negativeNum">(-)</button>
+              </div>
+              <button class="operators">%</button>
+              <button class="operators">X</button>
             </div>
             <div id="Equal">
               <button id="equal" onclick="operate()">=</button>
